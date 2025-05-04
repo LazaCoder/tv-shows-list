@@ -60,6 +60,7 @@ Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koriste
 
 ### 2025-05-04
 - Prijenos i sinkronizacija koda sa Github repozitorijem
+- Prikaz stranice sa svim glumcima serije + load more button komponenta
 
 
 
