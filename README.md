@@ -34,8 +34,11 @@ Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koriste
 
 
 
-> [!NOTE]
-> Ako nemate instaliran Node.JS na računalu trebate ga preuzeti i instalirati a to možete napraviti [ovdje](https://nodejs.org/en)
+  > [!NOTE]
+  > Ako nemate instaliran Node.JS na računalu trebate ga preuzeti i instalirati a to možete napraviti [ovdje](https://nodejs.org/en)
+
+
+
 
 
 ## Dnevnik rada
