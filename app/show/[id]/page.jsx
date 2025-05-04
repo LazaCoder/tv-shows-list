@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import React from "react";
 import styles from "./ShowDetails.module.css";
 import Image from "next/image";

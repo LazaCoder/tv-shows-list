@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import Image from "next/image";
 import ShowCard from "./components/ShowCard/ShowCard";
 import styles from "./home.module.css";
