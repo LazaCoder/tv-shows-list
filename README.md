@@ -15,6 +15,20 @@ Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koriste
 [Poveznica na detaljni opis](https://edit-react-docs.vercel.app/next_03/zadatak)
 
 
+## Lokalna instalacija i pokretanje stranice (Windows)
+1. Pokrenuti Windows CMD i pozicionirati se u direktorij (`cd /put/do/direktorija`) gdje se žele spremiti kod projekta
+2. Klonirati repozitorij:
+   ```
+   git clone https://github.com/LazaCoder/tv-shows-list
+   ```
+3. Pozicionirati se u direktorij unutar CMD-a i pokrenuti iduće naredbe:
+   ```
+   npm install
+   npm run dev
+   ```
+4. Ući na https://localhost:3000 gdje će biti prikazana početna stranica
+
+
 ## Dnevnik rada
 
 ### 2025-05-01
