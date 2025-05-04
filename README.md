@@ -32,7 +32,7 @@ Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koriste
 4. Ući na https://localhost:3000 gdje će biti prikazana početna stranica
 
 
-
+<br><br>
 
   > [!NOTE]
   > Ako nemate instaliran Node.JS na računalu trebate ga preuzeti i instalirati a to možete napraviti [ovdje](https://nodejs.org/en)
