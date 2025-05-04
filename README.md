@@ -30,7 +30,7 @@ Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koriste
 - U potpunosti implementiran prikaz svih epizoda jedne serije po sezonama
 - Prikaz stranice sa više detalja pojedinačne epizode
 
-### 2025-05-03
+### 2025-05-04
 - Prijenos i sinkronizacija koda sa Github repozitorijem
 
 
