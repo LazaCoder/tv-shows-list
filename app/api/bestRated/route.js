@@ -10,7 +10,7 @@ export async function GET() {
   try {
     let allShows = [];
 
-    for (let i = 0; i < 25; i++) {
+    for (let i = 0; i < 5; i++) {
       const res = await fetch(`https://api.tvmaze.com/shows?page=${i}`);
       const data = await res.json();
       allShows = allShows.concat(data);
