@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import styles from "./CommonButton.module.css";
+import styles from "./RouteButton.module.css";
 import { useRouter } from "next/navigation";
 
 const CommonButton = ({ label, className, type = "default", id, route }) => {

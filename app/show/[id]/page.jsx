@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./ShowDetails.module.css";
 import Image from "next/image";
 import StarRating from "@/app/components/StarRating/StarRating";
-import CommonButton from "@/app/components/CommonButton/CommonButton";
+import CommonButton from "@/app/components/RouteButton/RouteButton";
 import FavoriteButton from "@/app/components/FavoriteButton/FavoriteButton";
 
 export default async function ShowDetails({ params }) {

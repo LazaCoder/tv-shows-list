@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import CommonButton from "../CommonButton/CommonButton";
+import CommonButton from "../RouteButton/RouteButton";
 
 const FavoriteButton = ({}) => {
   const handleClick = () => {
