@@ -1,0 +1,15 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 2rem;
+    row-gap: 2rem;
+
+
+}
+
+
+@media (max-width: 600px) {
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

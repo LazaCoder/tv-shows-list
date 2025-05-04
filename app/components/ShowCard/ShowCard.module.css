@@ -1,0 +1,39 @@
+.card {
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+
+
+}
+
+
+.card:hover h4 {
+    color: #0070f3;
+
+}
+
+.card:hover .imageWrapper img {
+    transform: scale(1.05);
+}
+
+.imageWrapper {
+    width: 150px;
+    height: 225px;
+    overflow: hidden;
+}
+
+.imageWrapper img {
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.infoContainer {
+    text-align: center;
+}

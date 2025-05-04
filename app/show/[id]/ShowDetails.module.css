@@ -1,0 +1,283 @@
+.mainContainer {
+
+    display: flex;
+    padding-top: 2rem;
+    text-align: center;
+    padding-left: 2rem;
+
+
+
+
+}
+
+.imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+
+.infoContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.upper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+
+
+}
+
+.basicInfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+}
+
+.infoContainer h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+
+.summary {
+
+    padding-right: 3rem;
+    text-align: justify;
+
+}
+
+
+.lower {
+    flex: 1;
+    display: flex;
+}
+
+
+
+.genreContainer {
+
+    border: 1px solid #333;
+    border-radius: 1rem;
+    padding: 0 0.8rem;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.genreContainer p {
+
+    font-size: small;
+}
+
+.genreContainer:hover {
+    background-color: #2a2a2a;
+}
+
+
+.genresContainer {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.5rem;
+
+}
+
+.ratingTitle {
+    text-align: start;
+    margin-bottom: 0.4rem;
+}
+
+.ratingContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+}
+
+.timeContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+
+    h4 {
+        margin-bottom: 0.4rem;
+    }
+
+    p {
+        margin-top: 0rem;
+    }
+}
+
+
+.countryContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+
+    h4 {
+        margin-bottom: 0.4rem;
+    }
+
+    p {
+        margin-top: 0rem;
+    }
+}
+
+
+.castContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+    h4 {
+        margin-bottom: 0.4rem;
+    }
+
+}
+
+.castList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+    a {
+        text-decoration: underline;
+        color: rgb(58, 58, 235);
+    }
+
+
+
+}
+
+
+
+.buttonsContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    align-items: center;
+}
+
+.favoriteButton,
+.episodesButton {
+    width: 160px;
+    padding: 0.6rem 0;
+    border-radius: 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: none;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.favoriteButton:hover,
+.episodesButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    background-color: #2a2a2a;
+}
+
+.favoriteButton:active,
+.episodesButton:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.episodesButton {
+    background-color: #2563eb;
+    color: white;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+}
+
+.episodesButton:hover {
+    background-color: #1e40af;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .mainContainer {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .imageContainer {
+        margin-bottom: 1.5rem;
+    }
+
+    .infoContainer {
+        width: 100%;
+        align-items: center;
+    }
+
+    .upper {
+        row-gap: 1.5rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .summary {
+        padding-right: 0;
+        padding-left: 0;
+        text-align: justify;
+    }
+
+    .lower {
+        flex-direction: column;
+        row-gap: 1.5rem;
+        align-items: center;
+    }
+
+    .genresContainer {
+        flex-wrap: wrap;
+        row-gap: 0.5rem;
+    }
+
+    .ratingContainer,
+    .timeContainer,
+    .countryContainer,
+    .castContainer,
+    .buttonsContainer {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .favoriteButton,
+    .episodesButton {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .castList {
+        align-items: center;
+    }
+}
