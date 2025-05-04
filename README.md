@@ -16,18 +16,20 @@ Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koriste
 
 
 ## Lokalna instalacija i pokretanje stranice (Windows)
-1. Pokrenuti Windows CMD i pozicionirati se u direktorij (`cd /put/do/direktorija`) gdje se žele spremiti kod projekta
+1. Pokrenuti Windows CMD i pozicionirati se u direktorij (`cd /put/do/direktorija`) gdje se žele spremiti kod projekta <br>
 2. Klonirati repozitorij:
    
    ```cmd
    git clone https://github.com/LazaCoder/tv-shows-list
    ```
+   <br>
    
 3. Pozicionirati se u direktorij unutar CMD-a i pokrenuti iduće naredbe:
    ```cmd
    npm install
    npm run dev
    ```
+   <br>
    
 4. Ući na https://localhost:3000 gdje će biti prikazana početna stranica
 
