@@ -67,4 +67,9 @@ Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koriste
 - Prvi deploy na Vercel u kontekstu provjeravanja i postavljanja env varijabli
 - Optimizacija fontova
 - Uređen header -> dodan funkcionalan back button i search bar (bez funkcionalnosti)
-- load more funkcionalnost na home
+- load more funkcionalnost na homepage-u
+
+## 2025-05-06
+
+- Search funkcionalnost upotpunosti implementirana
+- Rješavanje bugova vezanih uz prikaz null podataka

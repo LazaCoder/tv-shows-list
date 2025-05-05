@@ -1,31 +1,40 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import ShowCard from "./components/ShowCard/ShowCard";
-import LoadMoreButton from "./components/LoadMoreButton/LoadMoreButton";
-import styles from "./home.module.css";
+import { useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
+import ShowCard from "../components/ShowCard/ShowCard";
+import LoadMoreButton from "../components/LoadMoreButton/LoadMoreButton";
+import styles from "./SearchPage.module.css";
 import Image from "next/image";
 
-export default function Home() {
+export default function SearchPage() {
+  const searchParams = useSearchParams();
   const [shows, setShows] = useState([]);
   const [index, setIndex] = useState(20);
   const [loaded, setLoaded] = useState(false);
+  const query = searchParams.get("query");
 
   useEffect(() => {
     const fetchShows = async () => {
-      const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
       try {
-        const res = await fetch(`${baseUrl}/api/bestRated?limit=${index}`);
+        if (!query) return;
+
+        const res = await fetch(
+          `https://api.tvmaze.com/search/shows?q=${query}`
+        );
         const data = await res.json();
         setShows(data);
         setLoaded(true);
+        console.log(data);
       } catch (error) {
         console.error("Failed to fetch shows:", error);
       }
     };
 
     fetchShows();
-  }, [index]);
+  }, [query]);
 
   const handleLoadMore = () => {
     setIndex((prevIndex) => prevIndex + 20);
@@ -48,18 +57,15 @@ export default function Home() {
   return (
     <div className={`${styles.mainContainer} ${loaded ? styles.fadeIn : ""}`}>
       <div className={styles.gridContainer}>
-        {shows.map((show) => (
+        {shows.slice(0, index).map((show) => (
           <ShowCard
-            key={show.id}
-            name={show.name}
-            premiered={show.premiered}
-            image={show.image?.medium || "/placeholder.png"}
-            id={show.id}
+            key={show.show.id}
+            name={show.show.name}
+            premiered={show.show.premiered}
+            image={show.show.image?.medium}
+            id={show.show.id}
           />
         ))}
-      </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <LoadMoreButton onClick={handleLoadMore} />
       </div>
     </div>
   );

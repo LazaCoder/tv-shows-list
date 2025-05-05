@@ -72,12 +72,16 @@ export default async function ShowDetails({ params }) {
           </div>
           <div className={styles.timeContainer}>
             <h4>Prosječno vrijeme trajanja</h4>
-            <p>{show.runtime} minuta</p>
+            <p>{show.runtime || "N/A"} minuta</p>
           </div>
 
           <div className={styles.countryContainer}>
             <h4>Zemlja</h4>
-            <p>{show.network.country.name}</p>
+            <p>
+              {show?.network?.country?.name
+                ? show?.network?.country?.name
+                : "N/A"}
+            </p>
           </div>
         </div>
         <div className={styles.lower}>
@@ -94,7 +98,7 @@ export default async function ShowDetails({ params }) {
 
           <div className={styles.countryContainer}>
             <h4>Mreža</h4>
-            <p>{show.network.name}</p>
+            <p>{show.network?.name ? show.network?.name : "N/A"}</p>
           </div>
           <div className={styles.buttonsContainer}>
             <FavoriteButton />

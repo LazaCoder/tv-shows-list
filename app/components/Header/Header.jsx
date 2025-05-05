@@ -2,12 +2,14 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
 import styles from "./header.module.css";
 
 export default function Header() {
   const router = useRouter();
+  const pathname = usePathname();
   const [search, setSearch] = useState("");
 
   const handleBack = () => {
@@ -17,7 +19,7 @@ export default function Header() {
   const handleSearch = (e) => {
     e.preventDefault();
 
-    router.push(`/search/${search}`);
+    router.push(`/search?query=${search}`);
   };
 
   const handleChange = (e) => {
@@ -27,9 +29,11 @@ export default function Header() {
   return (
     <header className={styles.headerContainer}>
       <div style={{ flex: "1", display: "flex" }}>
-        <button onClick={handleBack} className={styles.backButton}>
-          &#8592; Back
-        </button>
+        {pathname !== "/" && (
+          <button onClick={handleBack} className={styles.backButton}>
+            &#8592; Back
+          </button>
+        )}
       </div>
 
       <div style={{ flex: "1", display: "flex", justifyContent: "center" }}>
