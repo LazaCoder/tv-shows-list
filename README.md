@@ -27,17 +27,17 @@ Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koriste
    git clone https://github.com/LazaCoder/tv-shows-list
    ```
 
-   <br>
+   
 
 3. Pozicionirati se u direktorij unutar CMD-a i pokrenuti iduće naredbe:
    ```cmd
    npm install
    npm run dev
    ```
-   <br>
+   
 4. Ući na https://localhost:3000 gdje će biti prikazana početna stranica
 
-<br><br>
+<br>
 
 > [!NOTE]
 > Ako nemate instaliran Node.JS na računalu trebate ga preuzeti i instalirati a to možete napraviti [ovdje](https://nodejs.org/en)
