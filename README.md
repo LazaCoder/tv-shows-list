@@ -65,6 +65,6 @@ Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koriste
 - Prijenos i sinkronizacija koda sa Github repozitorijem
 - Prikaz stranice sa svim glumcima serije + load more button komponenta
 
-###
+### 2025-05-05
 
 - Prvi deploy na Vercel u kontekstu provjeravanja i postavljanja env varijabli
