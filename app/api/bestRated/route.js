@@ -19,8 +19,7 @@ export async function GET() {
 
     const topRated = allShows
       .filter((show) => show.rating?.average !== null)
-      .sort((a, b) => b.rating.average - a.rating.average)
-      .slice(0, 20);
+      .sort((a, b) => b.rating.average - a.rating.average);
 
     cachedTopShows = topRated;
     lastFetched = Date.now();
