@@ -68,3 +68,4 @@ Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koriste
 ### 2025-05-05
 
 - Prvi deploy na Vercel u kontekstu provjeravanja i postavljanja env varijabli
+- Optimizacija fontova
