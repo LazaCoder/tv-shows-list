@@ -68,6 +68,7 @@ Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koriste
 - Optimizacija fontova
 - Uređen header -> dodan funkcionalan back button i search bar (bez funkcionalnosti)
 - load more funkcionalnost na homepage-u
+- Namještena responzivnost pojedinih dijelova stranice (ima još posla)
 
 ## 2025-05-06
 
