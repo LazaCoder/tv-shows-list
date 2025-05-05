@@ -1,5 +1,7 @@
 # JuniorDev NEXT.js završni projekt - Showmania
 
+[Poveznica na deployment na Vercelu](https://tv-shows-list.vercel.app/)
+
 ## Zahtjevi i opis projekta:
 
 Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koristeći TV Maze API. Glavne funkcionalnosti uključuju:
