@@ -46,3 +46,31 @@
     justify-content: center;
 
 }
+
+
+
+@media (max-width: 768px) {
+    .castGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .button {
+        width: 200px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .castGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .button {
+        width: 180px;
+        font-size: 1.1rem;
+    }
+
+    .mainContainer {
+        padding: 1.5rem;
+    }
+}

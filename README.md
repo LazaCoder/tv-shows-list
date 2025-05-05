@@ -27,14 +27,11 @@ Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koriste
    git clone https://github.com/LazaCoder/tv-shows-list
    ```
 
-   
-
 3. Pozicionirati se u direktorij unutar CMD-a i pokrenuti iduće naredbe:
    ```cmd
    npm install
    npm run dev
    ```
-   
 4. Ući na https://localhost:3000 gdje će biti prikazana početna stranica
 
 <br>
@@ -69,3 +66,4 @@ Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koriste
 
 - Prvi deploy na Vercel u kontekstu provjeravanja i postavljanja env varijabli
 - Optimizacija fontova
+- Uređen header -> dodan funkcionalan back button i search bar (bez funkcionalnosti)

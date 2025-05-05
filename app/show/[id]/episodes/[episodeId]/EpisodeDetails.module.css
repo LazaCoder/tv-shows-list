@@ -52,3 +52,46 @@
     display: flex;
     justify-content: space-between;
 }
+
+
+
+@media (max-width: 768px) {
+    .mainContainer {
+        flex-direction: column;
+        padding: 1rem;
+        padding-left: 0;
+        padding-right: 0;
+        gap: 1rem;
+
+    }
+
+    .imageContainer {
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img {
+        width: 95%;
+        height: auto;
+    }
+
+    .infoContainer {
+        flex: 1;
+        align-self: center;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        gap: 1.5rem;
+    }
+
+    .summary {
+        max-height: none;
+        min-height: none;
+
+    }
+
+    .infoplusContainer {
+        flex-direction: column;
+        gap: 0rem;
+    }
+}

@@ -1,13 +1,68 @@
+"use client";
+
 import React from "react";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import Image from "next/image";
 import styles from "./header.module.css";
 
 export default function Header() {
+  const router = useRouter();
+  const [search, setSearch] = useState("");
+
+  const handleBack = () => {
+    router.back();
+  };
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+
+    router.push(`/search/${search}`);
+  };
+
+  const handleChange = (e) => {
+    setSearch(e.target.value);
+  };
+
   return (
     <header className={styles.headerContainer}>
-      <Image src={"/movieIcon.png"} height={80} width={80} alt="logo" />
+      <div style={{ flex: "1", display: "flex" }}>
+        <button onClick={handleBack} className={styles.backButton}>
+          &#8592; Back
+        </button>
+      </div>
 
-      <h1>Showmania</h1>
+      <div style={{ flex: "1", display: "flex", justifyContent: "center" }}>
+        <Image src={"/movieIcon.png"} height={80} width={80} alt="logo" />
+        <h1>Showmania</h1>
+      </div>
+
+      <div
+        style={{
+          flex: "1",
+          display: "flex",
+          gap: "1rem",
+          justifyContent: "flex-end",
+        }}
+      >
+        <div style={{ position: "relative" }}>
+          <input
+            type="text"
+            value={search}
+            onChange={handleChange}
+            className={styles.searchBar}
+            placeholder="Pretraži serije..."
+          />
+          <button onClick={handleSearch} className={styles.searchIcon}>
+            <Image
+              src={"/magnifierIcon.svg"}
+              width={20}
+              height={20}
+              alt="magnifier icon"
+            />
+          </button>
+        </div>
+      </div>
     </header>
   );
 }
