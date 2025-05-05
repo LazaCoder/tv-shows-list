@@ -9,7 +9,13 @@ export default function ShowCard({ name, premiered, image, id }) {
     <Link href={`/show/${id}`}>
       <div className={styles.card}>
         <div className={styles.imageWrapper}>
-          <Image src={image} width={150} height={225} alt="show image" />
+          <Image
+            src={image}
+            width={150}
+            height={225}
+            alt="show image"
+            priority
+          />
         </div>
         <div className={styles.infoContainer}>
           <h4>
