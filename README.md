@@ -74,3 +74,7 @@ Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koriste
 
 - Search funkcionalnost upotpunosti implementirana
 - Rješavanje bugova vezanih uz prikaz null podataka
+
+## 2025-05-07
+
+- Početak razvoja prikaza detalja glumaca
