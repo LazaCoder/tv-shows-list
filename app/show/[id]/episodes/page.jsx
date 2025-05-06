@@ -3,6 +3,7 @@
 import React, { useEffect, useState, use } from "react";
 import styles from "./EpisodesPage.module.css";
 import EpisodeCard from "@/app/components/EpisodeCard/EpisodeCard";
+import Image from "next/image";
 
 export default function EpisodesPage({ params }) {
   const { id } = use(params);
@@ -32,7 +33,17 @@ export default function EpisodesPage({ params }) {
   }, [id]);
 
   if (!selectedSeason || !episodesBySeason[selectedSeason]) {
-    return <div className={styles.mainContainer}>Loading...</div>;
+    return (
+      <div className={styles.loadingContainer}>
+        <Image
+          src={"/loadingSpinner.gif"}
+          width={150}
+          height={150}
+          style={{ backgroundColor: "transparent" }}
+          alt="loading spinner"
+        />
+      </div>
+    );
   }
 
   return (

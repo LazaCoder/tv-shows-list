@@ -9,6 +9,9 @@ export default async function CastDetails({ params }) {
     `https://api.tvmaze.com/people/${castId}?embed=castcredits`
   );
   const actor = await fetchActor.json();
+  const roles = actor._embedded.castcredits;
+
+  const rolesToFit = roles.length <= 12 ? roles : roles.slice(0, 12);
 
   function formatDate(date) {
     return new Date(date).toLocaleDateString("de-DE", {
@@ -52,7 +55,7 @@ export default async function CastDetails({ params }) {
 
         <h2>Roles</h2>
         <div className={styles.rolesContainer}>
-          {actor._embedded.castcredits.map((item, index) => (
+          {rolesToFit.map((item, index) => (
             <div
               key={index}
               style={{ display: "flex", flexDirection: "column" }}
