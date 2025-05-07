@@ -5,6 +5,7 @@ import styles from "./CastPage.module.css";
 import { useParams } from "next/navigation";
 import CastCard from "@/app/components/CastCard/CastCard";
 import LoadMoreButton from "@/app/components/LoadMoreButton/LoadMoreButton";
+import Image from "next/image";
 
 export default function CastPage() {
   const { id } = useParams();
@@ -29,7 +30,17 @@ export default function CastPage() {
   }, [id, index]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className={styles.loadingContainer}>
+        <Image
+          src={"/loadingSpinner.gif"}
+          width={150}
+          height={150}
+          style={{ backgroundColor: "transparent" }}
+          alt="loading spinner"
+        />
+      </div>
+    );
   }
 
   const handleLoadMore = (e) => {

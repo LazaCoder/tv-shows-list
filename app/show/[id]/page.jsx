@@ -101,7 +101,7 @@ export default async function ShowDetails({ params }) {
             <p>{show.network?.name ? show.network?.name : "N/A"}</p>
           </div>
           <div className={styles.buttonsContainer}>
-            <FavoriteButton />
+            <FavoriteButton id={show.id} />
             <CommonButton
               label="Vidi epizode"
               className="episodesButton"

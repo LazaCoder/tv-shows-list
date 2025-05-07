@@ -4,7 +4,14 @@ import React from "react";
 import styles from "./RouteButton.module.css";
 import { useRouter } from "next/navigation";
 
-const CommonButton = ({ label, className, type = "default", id, route }) => {
+const CommonButton = ({
+  label,
+  className,
+  type = "default",
+  id,
+  route,
+  disabled = false,
+}) => {
   const router = useRouter();
 
   const handleClick = () => {
@@ -15,6 +22,7 @@ const CommonButton = ({ label, className, type = "default", id, route }) => {
     <button
       className={`${styles.button} ${styles[type]} ${className}`}
       onClick={handleClick}
+      disabled={disabled}
     >
       {label}
     </button>
