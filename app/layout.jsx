@@ -1,5 +1,7 @@
 import "./globals.css";
 import Header from "./components/Header/Header";
+import HeaderMobile from "./components/HeaderMobile/HeaderMobile";
+import styles from "./HeaderChoose.module.css";
 
 export const metadata = {
   title: "Showmania",
@@ -24,7 +26,12 @@ export default function RootLayout({ children }) {
       </head>
 
       <body>
-        <Header />
+        <div className={styles.desktopOnly}>
+          <Header />
+        </div>
+        <div className={styles.mobileOnly}>
+          <HeaderMobile />
+        </div>
         {children}
       </body>
     </html>
