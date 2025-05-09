@@ -37,3 +37,36 @@
 .infoContainer {
     text-align: center;
 }
+
+
+.imageWrapper {
+    position: relative;
+    /* important for button positioning */
+    width: 150px;
+    height: 225px;
+    overflow: hidden;
+}
+
+.removeButton {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: background-color 0.2s;
+}
+
+.removeButton:hover {
+    background-color: darkred;
+}

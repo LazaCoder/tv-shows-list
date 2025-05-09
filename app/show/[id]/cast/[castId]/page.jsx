@@ -25,7 +25,7 @@ export default async function CastDetails({ params }) {
     <div className={styles.mainContainer}>
       <div className={styles.leftContainer}>
         <Image
-          src={actor.image?.original || "./noPhoto.jpg"}
+          src={actor.image?.original || "/noPhoto.jpg"}
           width={400}
           height={600}
           alt="actor image"

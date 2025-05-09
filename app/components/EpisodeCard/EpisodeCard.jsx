@@ -64,7 +64,7 @@ export default function EpisodeCard({ episode }) {
           </div>
         </div>
 
-        <p>{sanitizeText(episode.summary)}</p>
+        <p>{episode?.summary ? sanitizeText(episode.summary) : "N/A"}</p>
       </div>
     </div>
   );

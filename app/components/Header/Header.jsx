@@ -26,14 +26,22 @@ export default function Header() {
     setSearch(e.target.value);
   };
 
+  const handleClick = () => {
+    router.push("/favorites");
+  };
+
   return (
     <header className={styles.headerContainer}>
-      <div style={{ flex: "1", display: "flex" }}>
+      <div style={{ flex: "1", display: "flex", gap: "1.2rem" }}>
         {pathname !== "/" && (
           <button onClick={handleBack} className={styles.backButton}>
             &#8592; Back
           </button>
         )}
+
+        <button className={styles.favoriteButton} onClick={handleClick}>
+          Favoriti
+        </button>
       </div>
 
       <div style={{ flex: "1", display: "flex", justifyContent: "center" }}>

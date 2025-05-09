@@ -43,7 +43,12 @@ export default async function page({ params }) {
           S{episode.season}E{episode.number} - {episode.name}
         </h2>
 
-        <p className={styles.summary}> {sanitizeText(episode.summary)} </p>
+        <p className={styles.summary}>
+          {" "}
+          {episode?.summary
+            ? sanitizeText(episode.summary)
+            : "NO SUMMARY :("}{" "}
+        </p>
 
         <div className={styles.infoplusContainer}>
           <div>

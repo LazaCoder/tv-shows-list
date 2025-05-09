@@ -70,11 +70,16 @@ Ova aplikacija omogućuje korisnicima istraživanje popularnih TV serija koriste
 - load more funkcionalnost na homepage-u
 - Namještena responzivnost pojedinih dijelova stranice (ima još posla)
 
-## 2025-05-06
+### 2025-05-06
 
 - Search funkcionalnost upotpunosti implementirana
 - Rješavanje bugova vezanih uz prikaz null podataka
 
-## 2025-05-07
+### 2025-05-07
 
-- Početak razvoja prikaza detalja glumaca
+- Implementiran prikaz detalja glumaca
+- Osnovna funkcionalnost spremanja i prikazivanja favorita
+
+### 2025-05-09
+
+- Brisanje favorita i gumb za prelazak na stranicu favorita u Header-u

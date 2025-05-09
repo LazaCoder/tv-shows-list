@@ -84,3 +84,26 @@
 .searchIcon:hover {
     color: #ccc;
 }
+
+.favoriteButton {
+    background-color: #f1c40fc9;
+    color: #000;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.favoriteButton:hover {
+    background-color: #ffdd57;
+    transform: scale(1.05);
+}
+
+.favoriteButton:active {
+    background-color: #e1b70a;
+    transform: scale(1);
+}
